@@ -1,0 +1,63 @@
+<html>
+<head>
+<script language="javascript">
+function validate()
+{
+var nm=document.getElementById("text1").value;
+var mob=document.getElementById("text2").value;
+var addr=document.getElementById("text3").value;
+var city=document.getElementById("text4").value;
+var state=document.getElementById("text5").value;
+var pin=document.getElementById("text6").value;
+
+if(nm==null || nm=="")
+alert("Name Should Not Be Null !!!");
+
+if(!isNaN(nm))
+alert("Name Should Contain Only Characters  !!!");
+
+if(mob==null||mob=="")
+alert("Mobile No. Should Not Be Null !!!");
+
+if(mob.length<10)
+alert("Mobile No. Should Should Be Of 10 Digit !!!");
+
+if(addr==null||addr=="")
+alert("Address Should Not Be Null !!!");
+
+if(city==null||city=="")
+alert("City Should Not Be Null !!!");
+
+if(state==null||state=="")
+alert("State Should Not Be Null !!!");
+
+if(pin==null||pin=="")
+alert("Pincode Should Not Be Null !!!");
+
+
+if(pin.length<6)
+alert("Pincode Should Should Be Of 6 Digit !!!");
+}
+</script>
+</head>
+<body  >
+<h1><center>Student Registration Form</h1>
+<form name="myform" onsubmit="validate()"><center>
+<pre>
+Name of Student :<input type="text" id="text1">
+
+Mobile no.      :<input type="text" id="text2" maxlength=10>
+
+Address Line      :<input type="text" id="text3">  
+
+City            :<input type="text" id="text4">
+
+State            :<input type="text" id="text5"> 
+
+Pincode         :<input type="text" id="text6" maxlength=6> 
+</pre>
+   <input type="submit" value="Submit">                   <input type="reset"  value="Reset">
+</form>
+</center>
+</body>
+</html>

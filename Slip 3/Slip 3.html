@@ -1,0 +1,40 @@
+<html>
+<head>
+<script type="text/javascript">
+
+var slideimages= new Array();
+slideimages[0]=new Image();
+slideimages[0].src="firstcar.jpeg";
+slideimages[1]=new Image();
+slideimages[1].src="secondcar.jpeg";
+slideimages[2]=new Image();
+slideimages[2].src="thirdcar.jpeg";
+
+</script>
+</head>
+<body>
+<img src="firstcar.jpeg" id="slide" width=200 height=200>
+<script type="text/javascript">
+var step=0
+var whichimage=0
+
+function slideit()
+{
+if(!document.images)
+return
+document.getElementById("slide").src=slideimage[step].src
+whichimage=step;
+if(step<2)
+step++
+else
+step=0
+setTimeout("slideit()",250)]
+}
+slideit()
+
+</script>
+</body>
+</html>
+
+
+

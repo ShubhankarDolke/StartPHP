@@ -1,0 +1,46 @@
+<html>
+<head>
+<script language="javascript">
+function count()
+{
+var s=document.getElementById("c").value;
+if(document.getElementById("c1").checked==true)
+{
+var ch=prompt("Enter The Character : ");
+var i;
+var cnt=0;
+for(i=0;i<s.length;i++)
+{
+if(s[i]==ch)
+{
+cnt++;
+}
+}
+document.write(cnt);
+
+}
+
+if(document.getElementById("c2").checked==true)
+{
+var p=prompt("Enter The Position : ");
+document.write(s[p]);
+}
+}
+
+</script>
+</head>
+<body>
+<hr>
+<form>
+	Enter the String : &nbsp;&nbsp;<input type="text" name="text" id="c">
+	<br><br>
+	<input type="radio" name="opt" id="c1">
+	Accept The Character From User And Count It occurance
+	<br><br>
+	<input type="radio" name="opt" id="c2">
+	Print The Character At The Particular Position 
+	<br><br>
+	<input type="submit" name="submit" value="Submit" onclick="count()">
+</body>
+</form>
+</html>

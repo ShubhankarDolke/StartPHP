@@ -1,0 +1,20 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="tags.css"/>
+</head>
+<body>
+<br>
+<br>
+<h2>Kitchen & Dining</h2>
+<br>
+<br>
+<br>
+<br>
+<ol >
+<li><i>Cookware</i></li>
+ <li><i>Kitchenware</i></li>
+<li><i>Bakeware</i></li>
+<li><i>Serveware</i></li>
+</ol>
+</body>
+</html>
